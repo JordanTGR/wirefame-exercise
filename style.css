@@ -1,0 +1,156 @@
+/* Estilos del header */
+header {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 16px;
+    background-color: #0056b3; /* Color de fondo del header */
+    color: #ffffff; /* Color del texto en el header */
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para el header */
+    position: relative; /* Asegura que el header ocupe el ancho total */
+    height: 100px; /* Altura del header para acomodar la imagen */
+}
+
+header img {
+    height: 70px; /* Tamaño del logo */
+    max-width: 270px; /* Tamaño máximo del logo para ajustarse al espacio */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin distorsionar */
+    position: absolute; /* Permite centrar el logo */
+    left: 16px; /* Espacio desde el borde izquierdo del header */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre los elementos de navegación */
+    flex: 1; /* Ocupa el espacio restante del header */
+    padding: 0;
+    margin: 0;
+    max-width: 800px; /* Limita el ancho máximo de la lista */
+}
+
+header li {
+    cursor: pointer;
+    color: #ffffff; /* Color del texto de navegación */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para color y transformación */
+    text-align: center; /* Centra el texto dentro del ítem */
+}
+
+header li:hover {
+    color: #ffd700; /* Color de texto en hover */
+    transform: scale(1.1); /* Efecto de zoom en hover */
+}
+
+/* Estilos del main */
+main {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    margin: 0 auto; 
+    padding: 16px;
+    width: 100%;
+    max-width: 1200px; /* Tamaño máximo del contenido principal */
+}
+
+/* Sección superior: Imagen de héroe */
+main section:first-of-type {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Margen en la parte inferior */
+}
+
+main section:first-of-type img {
+    width: 100%;
+    max-width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto;
+    border-radius: 12px; /* Esquinas redondeadas para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para la imagen */
+}
+
+/* Sección del medio: Tres imágenes en fila */
+main section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes de manera uniforme */
+    gap: 30px; /* Espacio entre las imágenes */
+    margin-bottom: 30px; /* Margen en la parte inferior */
+}
+
+main section:nth-of-type(2) img {
+    width: 100%;
+    max-width: 30%; /* Cada imagen ocupa el 30% del ancho del contenedor */
+    height: auto;
+    border-radius: 8px; /* Esquinas redondeadas para las imágenes */
+    transition: transform 0.3s ease; /* Transición suave para la transformación */
+}
+
+main section:nth-of-type(2) img:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+/* Sección inferior: Imagen al lado del texto y el botón */
+main section:nth-of-type(3) {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    justify-content: space-between; /* Distribuye la imagen y el contenido de manera uniforme */
+    gap: 30px; /* Espacio entre la imagen y el contenido */
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Esquinas redondeadas para el contenedor */
+    background-color: #ffffff; /* Fondo blanco para la sección */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+main section:nth-of-type(3) img {
+    width: 50%; /* Imagen ocupa el 50% del ancho del contenedor */
+    height: auto;
+    border-radius: 8px; /* Esquinas redondeadas para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para la imagen */
+}
+
+main section:nth-of-type(3) div {
+    flex: 1; /* Permite que el div ocupe el espacio restante */
+    max-width: 50%; /* Limita el ancho del div al 50% del contenedor */
+    display: flex;
+    flex-direction: column; /* Disposición en columna para el contenido */
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+main section:nth-of-type(3) h2 {
+    margin-top: 0;
+    font-size: 28px; /* Tamaño del texto del encabezado */
+    color: #0056b3; /* Color del encabezado */
+}
+
+main section:nth-of-type(3) p {
+    margin: 16px 0;
+    line-height: 1.6;
+    color: #555; /* Color del texto del párrafo */
+}
+
+main section:nth-of-type(3) button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px; /* Esquinas redondeadas para el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para color y transformación */
+    cursor: pointer;
+}
+
+main section:nth-of-type(3) button:hover {
+    background-color: #0056b3; /* Color de fondo del botón en hover */
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+
+footer {
+    padding: 16px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #0056b3; /* Color de fondo del footer */
+    color: #ffffff; /* Color del texto en el footer */
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para el footer */
+}
